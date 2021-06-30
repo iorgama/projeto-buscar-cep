@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #eeeeee;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1024px;
+  align-items: center;
+}
+
+.menu {
+  background: #27496d;
+  padding: 20px 0;
+}
+
+.menu-logo a {
+  color: #f8f4f8;
+  font-size: 1.125em;
+}
+
+.menu-nav a {
+  color: #f8f4f8;
+  font-size: 1.125em;
+}
+
+.menu-nav {
+  flex: 1;
+}
+
+.menu-nav ul {
+  float: right;
+  display: flex;
+}
+
+.menu-nav ul li a {
+  padding: 20px;
+}
+
+.search-postcode {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-postcode h2 {
+  margin-bottom: 15px;
+  color: #27496d;
+}
+
+.form-postcode input[type='text'] {
+  padding: 15px;
+  width: 500px;
+  margin-top: 10px;
+  font-size: 1em;
+  color: #27496d;
+  border: 2px solid #27496d;
+  border-radius: 3px;
+}
+
+.form-postcode button {
+  color: #f8f4f8;
+  border-radius: 3px;
+  padding: 11px 14px;
+  margin-top: 10px;
+  margin-left: 5px;
+  background: #27496d;
+  font-size: 1.3em;
+  border: 2px solid #27496d;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#show-form {
+  display: none;
+}
+
+.show-postcode {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.show-postcode h3 {
+  color: #27496d;
+}
+
+.form-address {
+  width: 500px;
+  margin: 20px;
+}
+
+.form-address input[type='text'] {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  color: #27496d;
+}
+
+.form-address button {
+  width: 100%;
+  padding: 10px;
+  background: #27496d;
+  color: #f8f4f8;
+}
+
+.show-message {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #27496d;
+}
+
+.list-postcode {
+  justify-content: center;
+  padding: 30px;
+}
+
+.list-postcode {
+  display: flex;
+  align-items: center;
+}
+
+.list-postcode h2 {
+  color: #27496d;
+  margin-right: 15px;
+}
+
+button#list {
+  background: #27496d;
+  color: #f8f4f8;
+  padding: 5px 8px;
+  font-size: 1.3em;
+  border: 2px solid #27496d;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.card-address {
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background: #27496d;
+  color: #f8f4f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.capitalized {
+  text-transform: capitalize;
+}
+
+.delete-address {
+  width: 50%;
+  padding: 6px;
+  border: none;
+  border: r;
+  background: #f8f4f8;
+  color: #27496d;
+  border: 2px solid #f8f4f8;
+  cursor: pointer;
+  border-radius: 3px;
+}

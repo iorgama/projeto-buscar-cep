@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Busca CEP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="menu">
+    <div class="container">
+      <div class="menu-logo">
+        <a href="#"> BuscaCEP </a>
+      </div>
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="list.html">Listar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="search-postcode container">
+    <div class="search-postcode">
+      <h2>Buscar CEP</h2>
+      <form class="form-postcode" action="#">
+        <input type="text" placeholder="Digite um cep..." name="search-name" id="search-name">
+        <button id="search" type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </section>
+  <section id="show-message" class="show-message container">
+  </section>
+  <section id="show-form" class="show-postcode container ">
+    <div class="show-postcode">
+      <h3>CEP Localizado</h3>
+      <form class='form-address'>
+        <input type="text" placeholder="CEP" name="postcode" id="cep" />
+        <input type="text" placeholder="Logradouro" name="street" id="logradouro" />
+        <input type="text" placeholder="Complemento" name="complement" id="complemento" />
+        <input type="text" placeholder="Bairro" name="district" id="bairro" />
+        <input type="text" placeholder="Localidade" name="city" id="localidade" />
+        <input type="text" placeholder="UF" name="state" id="uf" />
+        <input type="text" placeholder="ibge" name="ibge" id="ibge" />
+        <input type="text" placeholder="gia" name="gia" id="gia" />
+        <input type="text" placeholder="ddd" name="ddd" id="ddd" />
+        <input type="text" placeholder="siafi" name="siafi" id="siafi" />
+        <div class='form-input'>
+          <button type='submit' id='saveAddress'>Salvar Local</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
