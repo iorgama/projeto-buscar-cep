@@ -10,24 +10,23 @@ const btnListAddress = document.querySelector('#list');
  *******************************/
 
 if (btnSearchCEP) {
-  btnSearchCEP.addEventListener('click', function (event) {
+  btnSearchCEP.addEventListener('click', (event) => {
     event.preventDefault();
     searchPostCode();
   });
 }
 
 if (btnListAddress) {
-  btnListAddress.addEventListener('click', function (event) {
+  btnListAddress.addEventListener('click', () => {
     event.preventDefault();
     searchAllAddress();
   });
 }
 
 if (btnSaveAddress) {
-  btnSaveAddress.addEventListener('click', function (event) {
+  btnSaveAddress.addEventListener('click', (event) => {
     event.preventDefault();
     getAddress();
-    //saveAddress();
   });
 }
 

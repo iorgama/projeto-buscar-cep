@@ -25,9 +25,12 @@ body {
   align-items: center;
 }
 
-.menu {
+header {
   background: #27496d;
-  padding: 20px 0;
+}
+
+.menu {
+  padding: 20px 10px;
 }
 
 .menu-logo a {
@@ -53,22 +56,59 @@ body {
   padding: 20px;
 }
 
-.search-postcode {
-  padding: 30px;
-  display: flex;
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu-nav {
+    margin-top: 20px;
+  }
+
+  .menu-nav ul li a {
+    padding: 8px;
+    border: 2px solid #f8f4f8;
+    margin: 5px;
+    transition: 0.8s none;
+  }
+
+  .menu-nav ul li a:hover {
+    padding: 8px;
+    background-color: #f8f4f8;
+    color: #27496d;
+    margin: 5px;
+    transition: 0.8s;
+  }
+}
+
+.search-postcode-section {
   justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.search-postcode {
+  display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
+  padding: 20px;
 }
 
 .search-postcode h2 {
   margin-bottom: 15px;
   color: #27496d;
+  align-self: center;
+}
+
+.form-postcode {
+  flex: 1;
+  display: flex;
+  min-width: 30%;
 }
 
 .form-postcode input[type='text'] {
+  flex: 2;
   padding: 15px;
-  width: 500px;
   margin-top: 10px;
   font-size: 1em;
   color: #27496d;
@@ -104,8 +144,9 @@ body {
 }
 
 .form-address {
-  width: 500px;
+  width: 80%;
   margin: 20px;
+  text-align: center;
 }
 
 .form-address input[type='text'] {
@@ -116,7 +157,7 @@ body {
 }
 
 .form-address button {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   background: #27496d;
   color: #f8f4f8;
@@ -127,6 +168,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #27496d;
+  margin-bottom: 30px;
 }
 
 .list-postcode {
@@ -183,10 +225,10 @@ button#list {
   width: 50%;
   padding: 6px;
   border: none;
-  border: r;
   background: #f8f4f8;
   color: #27496d;
   border: 2px solid #f8f4f8;
   cursor: pointer;
   border-radius: 3px;
+  align-self: center;
 }
