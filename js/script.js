@@ -3,7 +3,7 @@ const urlAddressAPI =
   'https://608850faa6f4a3001742632f.mockapi.io/api/v1/endereco';
 const btnSearchCEP = document.querySelector('#search');
 const btnSaveAddress = document.querySelector('#saveAddress');
-const btnListAddress = document.querySelector('#list');
+// const btnListAddress = document.querySelector('#list');
 
 /*******************************
  * BUTTONS
@@ -16,12 +16,11 @@ if (btnSearchCEP) {
   });
 }
 
-if (btnListAddress) {
-  btnListAddress.addEventListener('click', () => {
-    event.preventDefault();
-    searchAllAddress();
-  });
-}
+// if (btnListAddress) {
+//   btnListAddress.addEventListener('click', (event) => {
+//     searchAllAddress();
+//   });
+// }
 
 if (btnSaveAddress) {
   btnSaveAddress.addEventListener('click', (event) => {
@@ -61,8 +60,8 @@ function searchPostCode() {
 }
 
 //Busca todos os endereços salvos
-function searchAllAddress() {
-  fetch(urlAddressAPI, {
+async function searchAllAddress() {
+  await fetch(urlAddressAPI, {
     method: 'get',
   })
     .then((response) => response.json())
@@ -70,7 +69,9 @@ function searchAllAddress() {
       const storeAddress = result;
       hideElement(false, 'card-address');
       hideElement(true, 'show-message');
-      createCardsAddress(storeAddress);
+      let promise = new Promise(() => {
+        createCardsAddress(storeAddress);
+      });
     })
     .catch((err) => {
       console.error(err);
