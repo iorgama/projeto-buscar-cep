@@ -62,7 +62,7 @@ function searchPostCode() {
 //Busca todos os endereços salvos
 async function searchAllAddress() {
   await fetch(urlAddressAPI, {
-    method: 'Get',
+    method: 'GET',
   })
     .then((response) => response.json())
     .then((result) => {
@@ -82,7 +82,7 @@ async function searchAllAddress() {
 function getAddress() {
   let postcode = document.querySelector('#cep').value.trim();
   fetch(`${urlAddressAPI}?cep=${postcode}`, {
-    method: 'Get',
+    method: 'GET',
   })
     .then((response) => response.json())
     .then((result) => {
@@ -102,7 +102,7 @@ function getAddress() {
 function updateAddress(id) {
   const addressData = getAddressData();
   fetch(`${urlAddressAPI}/${id}`, {
-    method: 'Put',
+    method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
     },
@@ -122,7 +122,7 @@ function updateAddress(id) {
 function saveAddress() {
   const addressData = getAddressData();
   fetch(urlAddressAPI, {
-    method: 'Post',
+    method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
@@ -141,7 +141,7 @@ function saveAddress() {
 //Remove um endereço
 function removeAddress(id) {
   fetch(`${urlAddressAPI}/${id}`, {
-    method: 'Delete',
+    method: 'DELETE',
   })
     .then((result) => {
       if (result.ok) {
