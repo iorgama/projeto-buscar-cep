@@ -7,7 +7,6 @@ Desenvolver um app para buscar o cep pesquisado na api viaCep, permitindo ao usu
 ## Tecnologias utilizadas:
 * HTML
 * JS
-* SASS
 
 ## Url do projeto:
 [Projeto Buscar Cep](https://iorgama.github.io/projeto-buscar-cep/)
