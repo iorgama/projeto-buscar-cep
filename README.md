@@ -10,4 +10,4 @@ Desenvolver um app para buscar o cep pesquisado na api viaCep, permitindo ao usu
 * SASS
 
 ## Url do projeto:
-[Projeto Movies](https://iorgama.github.io/projeto-buscar-cep/)
+[Projeto Buscar Cep](https://iorgama.github.io/projeto-buscar-cep/)
